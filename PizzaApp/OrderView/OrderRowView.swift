@@ -12,13 +12,18 @@ struct OrderRowView: View {
     var orderItem: OrderItem
     
     var body: some View {
-        HStack {
-            Text(orderItem.description)
-                .font(.headline)
-            Spacer()
-            Text(orderItem.formattedExtendedPrice)
-                .bold()
+        VStack {
+            HStack {
+                Image(systemName: "\(orderItem.id).square")
+                Text(orderItem.description)
+                    .font(.headline)
+                Spacer()
+                Text(orderItem.formattedExtendedPrice)
+                    .bold()
+            }
+            Text(orderItem.comments)
         }
+        .animation(.none)
     }
 }
 

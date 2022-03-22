@@ -22,7 +22,7 @@ struct MenuDetailView: View {
     }
     
     func addItem() {
-//        orderModel.add(menuID: menuItem.id)
+        //        orderModel.add(menuID: menuItem.id)
         didOrder = true
     }
     
@@ -37,7 +37,7 @@ struct MenuDetailView: View {
                 .lineLimit(5)
                 .padding()
                 .layoutPriority(3)
-                
+            
             Spacer()
             Picker(selection: $settings.size, content: {
                 ForEach(sizes, id: \.self) { size in
@@ -46,23 +46,12 @@ struct MenuDetailView: View {
             }, label: {
                 Text("Pizza Size")
             }).pickerStyle(.segmented)
-//            HStack{
-//                Spacer()
-//                Text("Pizza size")
-//                Text(settings.size.formatted())
-//            }
-            .font(.headline)
+                .font(.headline)
             Stepper(value: $quantity, in: 1...10, label: {
                 Text("Quantity: \(quantity)")
                     .bold()
             })
-//            HStack{
-//                Text("Quantity:")
-//                Text("1")
-//                    .bold()
-//                Spacer()
-//            }
-            .padding()
+                .padding()
             HStack{
                 Text("Order:  \(formattedPrice)")
                     .font(.headline)
@@ -74,30 +63,27 @@ struct MenuDetailView: View {
             HStack{
                 Spacer()
                 Button(action: addItem) {
-                   Text("Add to order")
+                    Text("Add to order")
                         .font(.title)
                         .fontWeight(.bold)
                         .padding()
-                    .background(Color("G4"))
+                        .background(Color("G4"))
                         .foregroundColor(Color("IP"))
                         .cornerRadius(5)
                 }
-//                .alert(isPresented: $didOrder) {
-//                    Alert(title: Text("Pizza Ordered"), message: Text("You ordered a \(self.menuItem.name)"))
-//                }
                 .sheet(isPresented: $didOrder) {
                     ConfirmView(orderModel: orderModel,
                                 isPresented: $didOrder,
                                 quantity: $quantity,
+                                size: $settings.size,
                                 menuID: menuItem.id)
                 }
-
+                
                 Spacer()
             }
             .padding(.top)
             Spacer()
         }
-        
     }
 }
 
