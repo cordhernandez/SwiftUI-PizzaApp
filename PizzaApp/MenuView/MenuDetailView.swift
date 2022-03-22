@@ -39,19 +39,8 @@ struct MenuDetailView: View {
                 .layoutPriority(3)
             
             Spacer()
-            Picker(selection: $settings.size, content: {
-                ForEach(sizes, id: \.self) { size in
-                    Text(size.formatted()).tag(size)
-                }
-            }, label: {
-                Text("Pizza Size")
-            }).pickerStyle(.segmented)
-                .font(.headline)
-            Stepper(value: $quantity, in: 1...10, label: {
-                Text("Quantity: \(quantity)")
-                    .bold()
-            })
-                .padding()
+            SizePickerView(size: $settings.size)
+            QuantityStepperView(quantity: $quantity)
             HStack{
                 Text("Order:  \(formattedPrice)")
                     .font(.headline)

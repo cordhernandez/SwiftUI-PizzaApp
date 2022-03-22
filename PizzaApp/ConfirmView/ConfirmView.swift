@@ -10,8 +10,6 @@ import SwiftUI
 
 struct ConfirmView: View {
     
-    let sizes: [Size] = [.small, .medium, .large]
-    
     @ObservedObject var orderModel: OrderModel
     @Binding var isPresented: Bool
     @Binding var quantity: Int
@@ -52,19 +50,9 @@ struct ConfirmView: View {
             TextField("Add your comments here", text: $comments)
                 .background(Color("G4"))
             
-            Picker(selection: $size, content: {
-                ForEach(sizes, id: \.self) { size in
-                    Text(size.formatted()).tag(size)
-                }
-            }, label: {
-                Text("Pizza Size")
-            }).pickerStyle(.segmented)
+            SizePickerView(size: $size)
             
-            Stepper(value: $quantity, in: 1...10, label: {
-                Text("Quantity: \(quantity)")
-                    .bold()
-            })
-            
+            QuantityStepperView(quantity: $quantity)
             Spacer()
             
             HStack {
