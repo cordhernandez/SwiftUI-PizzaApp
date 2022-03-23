@@ -29,6 +29,8 @@
 		DF72EB4F27B22199002685B0 /* MenuDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF72EB4E27B22199002685B0 /* MenuDetailView.swift */; };
 		DF909FF927EA6F9100A0DD4F /* QuantityStepperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF909FF827EA6F9100A0DD4F /* QuantityStepperView.swift */; };
 		DF909FFB27EA6FE700A0DD4F /* SizePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF909FFA27EA6FE700A0DD4F /* SizePickerView.swift */; };
+		DF909FFE27EB8C2B00A0DD4F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF909FFD27EB8C2B00A0DD4F /* MapViewController.swift */; };
+		DF90A00027EB8DA400A0DD4F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF909FFF27EB8DA400A0DD4F /* MapView.swift */; };
 		DFE6360F27C2EF8A001EEC06 /* HistoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE6360E27C2EF8A001EEC06 /* HistoryDetailView.swift */; };
 		DFE6361127C31B0F001EEC06 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE6361027C31B0F001EEC06 /* RootTabView.swift */; };
 		DFE6361327C31F77001EEC06 /* ConfirmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE6361227C31F77001EEC06 /* ConfirmView.swift */; };
@@ -58,6 +60,8 @@
 		DF72EB4E27B22199002685B0 /* MenuDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuDetailView.swift; sourceTree = "<group>"; };
 		DF909FF827EA6F9100A0DD4F /* QuantityStepperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantityStepperView.swift; sourceTree = "<group>"; };
 		DF909FFA27EA6FE700A0DD4F /* SizePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizePickerView.swift; sourceTree = "<group>"; };
+		DF909FFD27EB8C2B00A0DD4F /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		DF909FFF27EB8DA400A0DD4F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		DFE6360E27C2EF8A001EEC06 /* HistoryDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryDetailView.swift; sourceTree = "<group>"; };
 		DFE6361027C31B0F001EEC06 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
 		DFE6361227C31F77001EEC06 /* ConfirmView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmView.swift; sourceTree = "<group>"; };
@@ -102,6 +106,7 @@
 				DF6FF90C27AF78F80026C4DA /* MenuView */,
 				DF909FF527EA631200A0DD4F /* ConfirmView */,
 				DF6FF90E27AF79020026C4DA /* HistoryView */,
+				DF90A00127EB8F1E00A0DD4F /* MapView */,
 				DF909FFC27EA700C00A0DD4F /* CommonView */,
 				DF6FF90D27AF78FD0026C4DA /* Model */,
 				DF6FF8E527AA536D0026C4DA /* Assets.xcassets */,
@@ -176,6 +181,15 @@
 				DF909FFA27EA6FE700A0DD4F /* SizePickerView.swift */,
 			);
 			path = CommonView;
+			sourceTree = "<group>";
+		};
+		DF90A00127EB8F1E00A0DD4F /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				DF909FFD27EB8C2B00A0DD4F /* MapViewController.swift */,
+				DF909FFF27EB8DA400A0DD4F /* MapView.swift */,
+			);
+			path = MapView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,10 +269,12 @@
 				DF6FF8E427AA536C0026C4DA /* ContentView.swift in Sources */,
 				DF6FF91227AF7A870026C4DA /* MenuListView.swift in Sources */,
 				DFE6360F27C2EF8A001EEC06 /* HistoryDetailView.swift in Sources */,
+				DF909FFE27EB8C2B00A0DD4F /* MapViewController.swift in Sources */,
 				DF6FF8E227AA536C0026C4DA /* PizzaApp.swift in Sources */,
 				DF909FFB27EA6FE700A0DD4F /* SizePickerView.swift in Sources */,
 				DF6FF91827AF7D3E0026C4DA /* MenuRowView.swift in Sources */,
 				DF72EB4C27B21C7E002685B0 /* OrderModel.swift in Sources */,
+				DF90A00027EB8DA400A0DD4F /* MapView.swift in Sources */,
 				DF6FF91C27AF7E9C0026C4DA /* PageTitleView.swift in Sources */,
 				DF6FF91027AF79610026C4DA /* OrderListView.swift in Sources */,
 				DF6FF92727AF95590026C4DA /* SelectedImageView.swift in Sources */,
