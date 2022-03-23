@@ -11,7 +11,7 @@ import MapKit
 
 class MapViewController: UIViewController {
     
-    let mapView = MKMapView()
+    private let mapView = MKMapView()
     
     var latitude: CLLocationDegrees = 40.8371
     var longitude: CLLocationDegrees = 14.2467
@@ -19,6 +19,12 @@ class MapViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        mapView.frame = view.frame
+        configureRegion()
+        view.addSubview(mapView)
+    }
+    
+    func updateMap() {
         mapView.frame = view.frame
         configureRegion()
         view.addSubview(mapView)

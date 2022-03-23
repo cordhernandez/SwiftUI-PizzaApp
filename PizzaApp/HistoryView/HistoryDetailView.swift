@@ -12,13 +12,15 @@ struct HistoryDetailView: View {
     
     var historyItem: HistoryItem
     @Binding var imageID: Int
+    @State var isPresented = false
     
     var body: some View {
         imageID = historyItem.id
         return VStack {
             PageTitleView(title: historyItem.name)
             MapView(latitude: historyItem.latitude, longitude: historyItem.longitude, regionRadius: 1000000)
-                .frame(height: 100)
+                .frame(height: 90)
+            PresentMapButton(isPresented: $isPresented, historyItem: historyItem)
             Text(historyItem.history)
                 .frame(height: 300)
             Spacer()

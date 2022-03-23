@@ -31,6 +31,7 @@
 		DF909FFB27EA6FE700A0DD4F /* SizePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF909FFA27EA6FE700A0DD4F /* SizePickerView.swift */; };
 		DF909FFE27EB8C2B00A0DD4F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF909FFD27EB8C2B00A0DD4F /* MapViewController.swift */; };
 		DF90A00027EB8DA400A0DD4F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF909FFF27EB8DA400A0DD4F /* MapView.swift */; };
+		DF90A00327EB93A900A0DD4F /* CloseUpMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF90A00227EB93A900A0DD4F /* CloseUpMapView.swift */; };
 		DFE6360F27C2EF8A001EEC06 /* HistoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE6360E27C2EF8A001EEC06 /* HistoryDetailView.swift */; };
 		DFE6361127C31B0F001EEC06 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE6361027C31B0F001EEC06 /* RootTabView.swift */; };
 		DFE6361327C31F77001EEC06 /* ConfirmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE6361227C31F77001EEC06 /* ConfirmView.swift */; };
@@ -62,6 +63,7 @@
 		DF909FFA27EA6FE700A0DD4F /* SizePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizePickerView.swift; sourceTree = "<group>"; };
 		DF909FFD27EB8C2B00A0DD4F /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		DF909FFF27EB8DA400A0DD4F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		DF90A00227EB93A900A0DD4F /* CloseUpMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloseUpMapView.swift; sourceTree = "<group>"; };
 		DFE6360E27C2EF8A001EEC06 /* HistoryDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryDetailView.swift; sourceTree = "<group>"; };
 		DFE6361027C31B0F001EEC06 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
 		DFE6361227C31F77001EEC06 /* ConfirmView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmView.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 			children = (
 				DF909FFD27EB8C2B00A0DD4F /* MapViewController.swift */,
 				DF909FFF27EB8DA400A0DD4F /* MapView.swift */,
+				DF90A00227EB93A900A0DD4F /* CloseUpMapView.swift */,
 			);
 			path = MapView;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				DF90A00027EB8DA400A0DD4F /* MapView.swift in Sources */,
 				DF6FF91C27AF7E9C0026C4DA /* PageTitleView.swift in Sources */,
 				DF6FF91027AF79610026C4DA /* OrderListView.swift in Sources */,
+				DF90A00327EB93A900A0DD4F /* CloseUpMapView.swift in Sources */,
 				DF6FF92727AF95590026C4DA /* SelectedImageView.swift in Sources */,
 				DF909FF927EA6F9100A0DD4F /* QuantityStepperView.swift in Sources */,
 				DF72EB4F27B22199002685B0 /* MenuDetailView.swift in Sources */,
